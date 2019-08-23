@@ -1,6 +1,8 @@
 package dsd
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Person struct {
 	name string
@@ -16,4 +18,5 @@ func NewPerson(name string, age int) *Person {
 
 func (p *Person) GoSchool() {
 	fmt.Printf("Today, %s %d years old go to school", p.name, p.age)
+
 }
